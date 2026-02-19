@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Articoli - Davide Tomio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header class="main-header">
+    <div class="header-content-brand">
+        <div class="brand">
+            <a href="index.html" class="logo-link">
+                <h1>Davide Tomio</h1>
+            </a>
+            <p class="subtitle">Storico delle religioni</p>
+        </div>
+    </div>
+</header>
+
+<div class="header-controls">
+    <a href="https://instagram.com/davide.tomio?igsh=YzZ0Y3F6OHpnOTlq" target="_blank" class="instagram-link-header">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+    <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+    </div>
+</div>
+
+<div id="trigger" class="trigger">
+    <i class="fa-solid fa-bars-staggered"></i>
+</div>
+
+    <nav class="side-menu" id="side-menu">
+        <a href="index.html">Home</a>
+        <a href="articoli.html">Articoli</a>
+    </nav>
+
+    <main class="container">
+        <nav class="breadcrumbs" aria-label="Percorso">
+        <a href="index.html">Home</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <span class="current">Articoli</span>
+        </nav>
+       <section class="archive">
+        <h2 class="reveal">Archivio Articoli</h2> 
+    
+        <div class="search-container reveal">
+            <input type="text" id="search-input" placeholder="Cerca tra gli articoli...">
+            <span class="search-icon">🔍</span>
+        </div>
+
+        <div class="posts-list"></div> 
+    </section>
+    </main>
+
+    <footer>
+    <div class="footer-content">
+        <div class="footer-social">
+            <a href="https://instagram.com/davide.tomio?igsh=YzZ0Y3F6OHpnOTlq" target="_blank">
+                <i class="fa-brands fa-instagram instagram-icon-footer"></i> 
+                Seguimi su Instagram!
+            </a>
+        </div>
+        <p>&copy; 2026 Davide Tomio</p>
+    </div>
+</footer>
+
+    <button id="backToTop" title="Torna su">
+    <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="database.js"></script>
+    <script src="script.js"></script>
+
+<div id="cookie-banner" class="cookie-banner">
+    <div class="cookie-content">
+        <p><strong>Questo sito non vende la tua privacy</strong>. Non usiamo cookie di terze parti, ma solo cookie funzionali per migliorare l'esperienza dell'utente. «Non va bene che ogni nostro movimento, ogni emozione, parola e desiderio siano catalogati, manipolati e poi indirizzati verso un futuro già deciso per far guadagnare qualcuno» (Shoshana Zuboff, <i>Il Capitalismo della Sorveglianza</i>). Leggi la <a href="../cookies.html">Cookie Policy</a>.</p>
+        <div class="cookie-buttons">
+            <button id="accept-cookies" class="cookie-btn accept">Accetta cookie funzionali</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
