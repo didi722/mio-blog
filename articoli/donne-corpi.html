@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title id="browser-title">Caricamento... - Davide Tomio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,300;0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script>
+    (function() {
+    const savedTheme = localStorage.getItem('theme');
+    const systemDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+    if (savedTheme === 'dark' || (!savedTheme && systemDark)) {
+        document.documentElement.classList.add('dark-mode');
+    }
+    })();
+    </script>
+    <link rel="stylesheet" href="../style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    
+
+<header class="main-header">
+    <div class="header-content-brand">
+        <div class="brand">
+            <a href="../index.html" class="logo-link">
+                <h1>Davide Tomio</h1>
+            </a>
+            <p class="subtitle">Storico delle religioni</p>
+        </div>
+
+        <div id="header-sticky-title" class="sticky-title-container">
+            <span class="sticky-title-text"></span>
+        </div>
+        </div>
+    
+    <div class="progress-container" style="position: absolute; bottom: 0; top: auto;">
+        <div class="progress-bar" id="myBar"></div>
+    </div>
+</header>
+
+<div class="header-controls">
+    <a href="https://instagram.com/davide.tomio?igsh=YzZ0Y3F6OHpnOTlq" target="_blank" class="instagram-link-header">
+        <i class="fa-brands fa-instagram"></i>
+    </a>
+    <div class="hamburger" id="hamburger">
+        <span></span><span></span><span></span>
+    </div>
+</div>
+
+<div id="trigger" class="trigger">
+    <i class="fa-solid fa-bars-staggered"></i>
+</div>
+
+    <nav class="side-menu" id="side-menu">
+        <a href="../index.html">Home</a>
+        <a href="../articoli.html">Articoli</a>
+    </nav>
+
+    <main>
+        <article class="full-article">
+            <nav class="breadcrumbs" aria-label="Percorso">
+            <a href="../index.html">Home</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            <a href="../articoli.html">Articoli</a>
+            <i class="fa-solid fa-chevron-right"></i>
+            <span class="current" id="breadcrumb-current">Caricamento...</span>
+            </nav>
+            <header class="article-header reveal">
+                <div class="article-header-top">
+                    <h1 id="main-title">Caricamento...</h1>
+                    <p class="date" id="main-date"></p>
+                </div>
+                <p class="article-subtitle" id="main-subtitle"></p>
+            </header>
+
+            <div class="featured-image reveal">
+                <img id="main-image" src="" alt="">
+            </div>
+
+    <div class="article-meta-info reveal">
+        <div class="reading-time-container">
+            <span id="reading-time">Calcolo tempo di lettura...</span>
+        </div>
+    </div>
+
+    <div class="article-exit-wrapper reveal">
+
+            <div class="article-body">
+<p>C’è una stampa del maestro Kitagawa Utamaro 喜多川 歌麿 (1753-1806) che, con pochi soggetti, riesce a racchiudere la tensione che ha dominato la figura della donna nel Giappone di periodo Edo (1603-1868). Una nota cortigiana d’alto rango, Hanaōgi, distratta dalle sue letture si trova assorta nei suoi pensieri. Sogna una processione solenne, ma non una qualsiasi: <b>una processione matrimoniale</b>. Prendere marito è una possibilità inconciliabile con la sua realtà di cortigiana: due sfere incompatibili, come il sogno e la veglia nella stampa di Utamaro.</p>
+<figure class="article-figure align-right"><img src="../immagini/utamaro-hanaogi-dream.webp" alt="Hanaōgi di Utamaro"><figcaption class="article-figcaption">"Kitagawa Utamaro, <i>Una cortigiana che sogna il suo matrimonio</i>, stampa a matrice di legno, 1798-1800."</figcaption></figure>
+<h2>Una società sotto vetro</h2>
+<p>Facciamo un passo indietro. All’inizio del XVII secolo, dopo un travagliato periodo di contese e guerre per il controllo dell’arcipelago, viene istaurato un governo militare. Sotto il controllo della famiglia Tokugawa, il Giappone cercava una perduta stabilità: quella che alcuni storici hanno definito come <i>Pax Tokugawa</i>. L’obiettivo era quello di <b>creare una società "cristallizzata"</b>, dove ogni individuo era un ingranaggio di una macchina perfetta e immutabile. Una rigida divisione in classi sociali, separate per mestiere, poneva le basi per questo nuovo ordine. Per farlo, il governo adottò il <b><span class="term" data-term="neoconfucianesimo">neoconfucianesimo</span></b> come vera e propria dottrina di stato.</p>
+<p>Qui entra in gioco un concetto filosofico dal nome tecnico, il sistema <i>Lizhi</i> (礼治システム),<sup class="nota-link" id="ref1"><a href="#nota1">1</a></sup> ma dal significato molto pratico: una società funziona solo se ognuno sta al proprio posto in una rigida scala gerarchica. Sovrano sopra il suddito, padre sopra il figlio e, inevitabilmente, <b>marito sopra la moglie</b>: proprio «posizionando la donna in basso, questa comunità […] era in grado di mantenere la struttura sociale e, quindi, di riprodursi in una società identica a se stessa».<sup class="nota-link" id="ref2"><a href="#nota2">2</a></sup> Le motivazioni di questa discriminazione facevano parte di una precisa strategia politica, che riguardava in particolare due elementi: la gestione del patrimonio e la riproduzione. Le donne vennero infatti escluse dalla linea ereditaria, naturale conseguenza del culmine evolutivo di una società feudale.<sup class="nota-link" id="ref3"><a href="#nota3">3</a></sup> In una dinamica terriera, infatti, disperdere terre fra più eredi significava indebolire il potere. E per la stessa logica, la riproduzione diveniva il mezzo fondamentale attraverso cui la famiglia (lo <i>ie</i> 家) si affermava e sopravviveva nel tempo.
+<p>In questo scenario, il corpo femminile non apparteneva alla donna, ma direttamente alla famiglia e, come suo prolungamento, allo stato. Il <b>controllo sulle gravidanze</b>, per esempio, raggiunse livelli altissimi durante il periodo Edo. Nel 1836, un’ordinanza nazionale arrivò a stabilire come:</p>
+<blockquote>«Ogni persona che ritardi nel presentare la notifica di gravidanza, sia essa confermata o anche solo in dubbio, e a prescindere dal buon risultato del parto, sarà punita con dieci giorni di carcere pubblico.»<sup class="nota-link" id="ref4"><a href="#nota4">4</a></sup></blockquote>
+<p>Il corpo che genera vita era diventato un affare di ordine pubblico.</p>
+<h2>Corpi anatomici</h2>
+<p>Un elemento che contribuì a rafforzare questo tipo di ideologia politica fu l’introduzione dell’anatomia europea con la pubblicazione, nel 1774, del <i>Kaitai Shinsho</i> 解体新書. Fino alla metà del Settecento, in Giappone, il corpo umano era visto attraverso la lente della medicina tradizionale cinese: un sistema di flussi di energia, visceri correlati agli elementi naturali e un equilibrio precario tra Yin e Yang. Le illustrazioni del <i>Kaitai Shinsho</i>, basandosi sull’anatomia europea, cominciarono quindi a veicolare, oltre a nuova conoscenza, anche <b>un modello diverso di intendere le differenze di genere</b>.<sup class="nota-link" id="ref5"><a href="#nota5">5</a></sup> Si passò da uno schema fluido a uno più rigido, in cui la scienza cercava di comprendere (e disegnare) in maniera puntuale i corpi e le loro differenze. Uomini con spalle larghe e squadrate, muscolatura più evidente, viso geometrico; donne con fianchi più larghi, spalle arrotondante, volti aggraziati. Paradossalmente, più la scienza diventava "precisa", più la donna veniva definita esclusivamente attraverso il suo corpo.</p>
+<figure class="article-figure align-center"><img src="../immagini/kaitai-shinsho.jpg" alt="Due pagine del Kaitai Shinsho"><figcaption class="article-figcaption">Due pagine del <i>Kaitai Shinsho</i>, dove è evidente la caratterizzazione di due generi fisicamente distinti.</figcaption></figure>
+<p>L’enorme diffusione dello <i>Onna Daigaku</i> 女大学, un testo neoconfuciano, esplicita in termini assoluti la condizione femminile subalterna di periodo Edo. “Il grande insegnamento per le donne”, questo il titolo del libro, divenne famoso per riassumere la vita femminile nelle cosiddette <b>Tre Obbedienze</b> (<i>sanjū</i> 三従): <b>al padre</b> prima del matrimonio, <b>al marito</b> durante il matrimonio, e <b>al figlio</b> dopo il matrimonio. Una dipendenza da una figura maschile che, quindi, doveva continuare per tutta la vita.</p>
+<h2>Sante e peccatrici</h2>
+<p>Eppure, proprio mentre il governo cercava di "congelare" le donne nei loro ruoli domestici, nelle strade di Edo (l'odierna Tokyo) stava nascendo qualcosa di nuovo. La futura capitale era una città vibrante, tra le più grandi del mondo, in continua espansione e ricerca di identità. <b>Nascevano i quartieri di piacere</b>, il più famoso tra i quali era quello di Yoshiwara, che sfidavano la rigida gerarchia dell’ideologia confuciana. Al loro ingresso, i samurai depositavano le armi e i monaci si incappucciavano per nascondere la loro testa rasata: le classi sociali cessavano di esistere. I bagni pubblici qui sono comuni a tutti, nobili e contadini, uomini e donne: «<b>un padrone e il suo servo sono ugualmente nudi quando si lavano</b>»<sup class="nota-link" id="ref6"><a href="#nota6">6</a></sup> scriveva Shikitei Sanba 式亭 三馬 (1776-1822), brillante commediografo dell’epoca. Il governo, consapevole della pericolosità ideologica di questi luoghi, cercava timidamente di opporre resistenza. I quartieri di piacere vennero isolati e chiusi con delle mura, posizionati a nord-est della città, zona infausta per le geomanzia tradizionale. A fine Settecento vennero emanate in due diverse occasioni leggi per tentare di far chiudere i bagni misti: nel 1808, tuttavia, se ne potevano contare quasi quattrocento nella sola Edo.<sup class="nota-link" id="ref7"><a href="#nota7">7</a></sup>
+<p>Le protagoniste di questi luoghi erano le <b>cortigiane</b>, l’opposto estremo della moglie fedele nella stampa di Utamaro. Nel loro caso non erano oggetti da possedere, ma oggetti di lusso, noleggiabili ma mai completamente raggiungibili. Paradossalmente questa oggettificazione, essendo di livello più alto, poteva garantire loro una <b>libertà intellettuale ed estetica</b> negata alle mogli. Le cortigiane d'alto rango (<i>oiran</i> 花魁) erano vere e proprie icone di stile: dettavano legge nella moda, conoscevano la poesia, la musica e la cerimonia del tè. Diventavano modelle per le opere degli artisti più rinomati, stampate in serie e elevate a simboli di intere generazioni. Tuttavia, questa libertà era un'illusione dorata: restavano comunque prigioniere dello sguardo maschile, a esso soggiogate e difficilmente in grado di emanciparvisi.</p>
+<div class="box-curiosita align-left">
+<h4>Il “terzo genere” nel teatro</h4>
+<p> Nel mondo del teatro e del piacere di Edo, la distinzione tra maschio e femmina era ancora più sfumata grazie agli <i>onnagata</i> 女形, attori uomini che interpretavano ruoli femminili. Erano considerati l'ideale massimo della femminilità, tanto che non di rado donne cercavano di imitare le loro movenze e il loro stile. Questo dimostra quanto il genere, nei quartieri di piacere di Edo, fosse una performance più che un dato biologico fisso.</p>
+</div>
+<p>E, mentre la scienza cercava di catalogare i corpi e la politica di dividerli, in questo universo fatto di teatro, case di tè e quartieri di piacere <b>esplodeva la moda delle <i>shunga</i> 春画</b>. Letteralmente “immagini di primavera”, queste stampe erotiche, che oggi chiameremmo senza mezzi termini “pornografia”, divennero parte integrante della cultura di massa. Questo tipo di immagini si appoggiavano sulle dinamiche sociali dei quartieri di piacere e mostravano molto meno marcatamente una differenziazione tra corpi maschili e femminili. Paradossalmente, visto che raffiguravano corpi effettivamente nudi. Eppure, basta guardare qualche <i>shunga</i> per accorgersi di come i corpi siano spesso rappresentati in modo quasi identico. Stessa pelle bianchissima, lineamenti del viso simili; persino la muscolatura non è marcatamente differenziata. <b>Un’uguaglianza fisica che trasmette «un’uguaglianza di potere»</b>.<sup class="nota-link" id="ref8"><a href="#nota8">8</a></sup> Solo i genitali ci possono dare la certezza di chi stiamo guardando In queste immagini, il genere non è definito da come è fatto il corpi, ma per esempio da che cosa indossa, da come sono acconciati i capelli, o dalla posizione che occupa.</p>
+<figure class="article-figure align-right"><img src="../immagini/okumura-shunga.png" alt="Okumura erotic print"><figcaption class="article-figcaption">Stampa erotica di Okumura Masanobu del 1740 circa. La persona in alto è una donna, mentre quella in basso un uomo.</figcaption></figure>
+<h2>La donna, salvatrice del mondo</h2> 
+<p>Con tutte queste considerazioni in mente, addentriamoci in una delle manifestazioni religiose che personalmente trovo più affascinanti di tutta la storia del Giappone. <b>Kotani Sanshi</b> 小谷 三志 (1765-1841) è stato il fondatore, nel 1809, del gruppo religioso noto come Fujidō 不二道, la “Via della non-dualità”.<sup class="nota-link" id="ref9"><a href="#nota9">9</a></sup> Si trattava di un gruppo abbastanza liquido, poco istituzionalizzato, sorto staccandosi dal più grande Fujikō 富士講 (“Associazione del monte Fuji”), un insieme di asceti e pellegrini devoti al monte Fuji e alle sue divinità. Le idee di Kotani sono in parte conservatrici e in parte rivoluzionarie. Egli si agganciò al lignaggio risalente direttamente a Jikigyō Miroku 食行 身禄 (1671-1733), un riformatore che criticava i membri di Fujikō di cercare la felicità in una ritualità orientata alla ricerca di fortuna materiale anziché nel «coltivare la propria integrità morale e rispettare diligentemente il loro ruolo sociale.»<sup class="nota-link" id="ref10"><a href="#nota10">10</a></sup> Anche se in queste parole risuona l’ideologia neoconfuciana del rispetto delle classi sociali, l’innovazione di Jikigyō fu quella di architettare una complessa <span class="term" data-term="escatologia">escatologia</span>, annunciando l’imminente arrivo di un mondo nuovo.</p>
+<figure class="article-figure align-left"><img src="../immagini/kotani-sanshi.jpg" alt="Kotani Sanshi"><figcaption class="article-figcaption">Ritratto di Kotani Sanshi.</figcaption></figure>
+<p>Kotani Sanshi quindi, con in mente il concetto di fine del mondo annunciato da Jikigyō Miroku, vedeva la realtà intorno a sé come <b>in crisi, corrotta, prossima al termine</b>. E si concentrò su come riequilibrarla. Basandosi su concetti taoisti ben noti ai suoi contemporanei, fotografò l’immagine di una società in cui lo <b><i>yang</i></b>, la forza cosmica maschile, dominava pericolosamente sullo <b><i>yin</i></b>, la forza femminile. Questo disequilibrio cosmologico era la causa della crisi del mondo contemporaneo, e della sua fine prossima. L’unica soluzione che vede plausibile, a questo punto, è quella di rivedere completamente i rapporti tra i due sessi.</p>
+<p>Questo avviene, secondo Sanshi, a partire dalle relazioni di tutti i giorni. Nel suo mondo ideale durante il giorno</p>
+<blockquote>«è la moglie che deve uscire a riscuotere i crediti dei clienti. È la moglie che deve diventare il capofamiglia.»<sup class="nota-link" id="ref11"><a href="#nota11">11</a></sup></blockquote>
+<p>Secondo il fondatore di Fujidō, quindi, ribaltare i ruoli tra uomo e donna è fondamentale ai fini dell’equilibrio cosmico. <b>Ribaltare, non rendere uguali</b>. Se il mondo è in abbondanza di <i>yang</i>, rendere uomo e donna uguali non cambierà la situazione. Bisogna invece creare un eccesso di <i>yin</i>, affinché col tempo si possa correggere la faglia creata e tornare a una situazione di effettivo equilibrio.</p>
+<p>In un estremo interessantissimo di questo pensiero, Sanshi ci parla di come si dovrebbero affrontare le relazioni sessuali tra uomo e donna. Egli nota come la posizione sessuale riveli ruoli di potere: l’uomo sopra e la donna sotto. Per riequilibrare l’universo, bisognerà fare il contrario: <b>la donna sopra</b>, in posizione di controllo e dominio, affinché la sua energia <i>yin</i> sovrasti quella <i>yang</i> maschile:</p>
+<div class="poesia">
+La donna, che è <i>yin</i>, dovrà essere sopra<br>
+E l’uomo, <i>yang</i>, sotto<br>
+Così l’acqua scenderà, e il fuoco salirà<sup class="nota-link" id="ref12"><a href="#nota12">12</a></sup><br>
+[…]<br>
+In questo modo, l’energia vitale della donna si schiuderà<br>
+E l’energia vitale dell’uomo si calmerà.<sup class="nota-link" id="ref13"><a href="#nota13">13</a></sup></div>
+<p>I memri di Fujidō non si fermarono alla teoria. Il 19 ottobre del 1832, infatti, una <b>ragazza</b> di venticinque anni nota come Tatsu たつ, guidata da Kotani Sanshi e altri quattro membri maschili, raggiunse la <b>cima del monte Fuji</b> travestita da uomo. All’epoca, la quasi totalità del monte Fuji, considerato sacro, era interdetta alle donne. Secondo una pratica nota come <i>nyonin kinsei</i> 女人禁制 (lett. “proibizione alle donne”), infatti, numerosi luoghi sacri erano vietati al sesso femminili, se non in toto quantomeno durante il loro periodo mestruale. Giravano storie di come persino le madri di monaci illustri, varcando confini sacri, avessero provocato l’ira dei cieli: la terra si squarciava sotto di loro, fulmini cadevano dal cielo.<sup class="nota-link" id="ref14"><a href="#nota14">14</a></sup> Portando in cima alla più sacra delle montagne una donna Kotani Sanshi dimostrò, sostanzialmente, come alle divinità <b>non fregasse poi molto</b> di questo divieto.</p>
+      
+<div id="end-of-content-marker"></div> </div>
+
+</div>
+<section class="footnotes">
+<ol>
+<li id="nota1">Ideato dal filosofo cinese Xunxi 荀子 (310-235 bce), fu un’ideologia politica molto fiorente, già in grado di reggere l’apparato statale delle dinastie Ming (1368-1644) e Qing (1644-1911).<a href="#ref1">↩</a></li>
+<li id="nota2">Nobukuni Koyasu, “«Josei» to iu shiza to «joseishiki»” 「女性」という視座と「女性史」, 1997, pp. 2-3.<a href="#ref2">↩</a></li>
+<li id="nota3">Haruko Wakita, “Marriage and Property in Premodern Japan”, in <i>The Journal of Japanese Studies</i>, 1984, pp. 92-97.<a href="#ref3">↩</a></li>
+<li id="nota4">Mikako Sawayama, “«Umu» shintai to kaitai. Shussan torishimari” 「産む」身体と懐胎・出産取締り, 1997, p. 23.<a href="#ref4">↩</a></li>
+<li id="nota5">Morris F. Low, “Medical Representations of the Body in Japan”, in <i>Annals of Science</i>, 1996, p. 354.<a href="#ref5">↩</a></li>
+<li id="nota6">Robert W. Leutner, <i>Shikitei Sanba and the Comic Tradition</i>, 1985, p. 137.<a href="#ref6">↩</a></li>
+<li id="nota7">Nam-lin Hur, <i>Prayer and Play in Late Tokugawa Japan</i>, 2000, p. 137.<a href="#ref7">↩</a></li>
+<li id="nota8">Timon Screech, <i>Sex and the Floating World</i>, 1999, p. 185.<a href="#ref8">↩</a></li>
+<li id="nota9">Ma anche “Via del Monte Fuji, per via dell’omofonia tra “fuji” 不二, “non-duale”, e, appunto, “Fuji” 富士, “[monte] Fuji.<a href="#ref9">↩</a></li>
+<li id="nota10">Janine A. Sawada, <i>Sexual Relations as Religious Practice</i>, 2006, p. 345.<a href="#ref10">↩</a></li>
+<li id="nota11">Fumiko Miyazaki, “Pilgrims and Mt. Fuji”, 2005, p. 351.<a href="#ref11">↩</a></li>
+<li id="nota12">L’acqua è un elemento <i>yin</i>, mentre il fuoco un elemento <i>yang</i>. L’acqua scorre verso il basso, mentre il fuoco vola in alto: una posizione invertita è necessaria anche per creare un incontro tra le due forze, che altrimenti si allontanerebbero.<a href="#ref12">↩</a></li>
+<li id="nota13">Kotani Sanshi 小谷 三志, “Shōmeimon” 承明門.<a href="#ref13">↩</a></li>
+<li id="nota14">Sherry Fowler, “Setting Foot on the Mountain”, p. 58.<a href="#ref14">↩</a></li>
+</ol>
+</section>
+
+
+
+
+<section class="bibliography-section">
+    <button class="biblio-toggle" id="biblioToggle">
+        Bibliografia <i class="fa-solid fa-chevron-down"></i>
+    </button>
+    
+<div class="biblio-content" id="biblioContent">
+<ul>
+<li>Fowler, Sherry, “Setting Foot on the Mountain: Mt. Murō as a Women’s Alternative to Mt. Kōya”, <i>Asian Journal of Women’s Studies</i>, vol. 3 n. 4, pp. 52-68, 1997.</li>
+<li>Hur, Nam-lin, <i>Prayer and Play in Late Tokugawa Japan: Asakusa Sensōji and Edo Society</i>, Cambridge (MA) e Londra, Harvard University Press, 2000.</li>
+<li>Koyasu, Nobukuni 子安 宣邦, “«Josei» to iu shiza to «joseishiki»” 「女性」という視座と「女性史」, in <i>Edo no shisō. Shintai/Joseiron</i> 江戸の思想・身体/女性論, a cura di Nobukuni Koyasu, pp. 2-6, Tokyo, Perikan-sha, 1997.</li>
+<li>Leutner, Robert W, <i>Shikitei Sanba and the Comic Tradition in Edo Fiction</i>, Cambridge (MA), Harvard University Asia Center, 1985.</li>
+<li>Low, Morris F., “Medical Representations of the Body in Japan: Gender, Class, and Discourse in the Eighteenth Century”, in <i>Annals of Science</i>, vol. 53 n. 4, pp. 345-359, 1996.</li>
+<li>Miyazaki, Fumiko, “Pilgrims and Mt. Fuji: Changing Perspectives on the Exclusion of Women”, in <i>Monumenta Nipponica</i>, vol. 60 n. 3, pp. 339-391, 2005.
+<li>Sanshi, Kotani, 小谷 三志, “Shōmeimon” 承明門, in <i>Fujikō, Fujidō kōshinkō eika kyōkun-kayō shū</i> 冨士講・不二道孝心講詠歌教訓歌謡集, a cura di Hiroshi Okada 博 岡田, pp. 183-185, Hatogaya-shi, Kotani Sanshi-ō Kenshōkai, 1993.</li>
+<li>Sawada, Janine A., “Sexual Relations as Religious Practice in the Late Tokugawa Period: Fujidō”, in <i>The Journal of Japanese Studies</i>, vol. 32 n. 2, pp. 341-366, 2006.</li>
+<li>Sawayama, Mikako 沢山 美果子, “«Umu» shintai to kaitai. Shussan torishimari” 「産む」身体と懐胎・出産取締り, in <i>Edo no shisō. Shintai/Joseiron</i> 江戸の思想・身体/女性論, a cura di Nobukuni Koyasu 宣邦 子安, pp. 7-27, Tokyo, Perikan-sha, 1997.</li>
+<li>Screech, Timon, <i>Sex and the Floating World: Erotic Images in Japan 1700-1820</i>, Londra, Reaktion Books Ltd, 1999.<li>
+<li>Wakita, Haruko, “Marriage and Property in Premodern Japan from the Perspective of Women’s History”, in <i>The Journal of Japanese Studies</i>, vol. 10 n. 1, pp. 73-99, 1984.</li>
+</ul>
+</div>
+
+
+</section>
+            
+            <div class="article-tags-section">
+                <span class="tags-label">Argomenti:</span>
+                <div id="article-tags" class="tags-container">
+                    </div>
+            </div>
+
+            <div class="article-footer">
+                <a href="../articoli.html" class="back-link">← Torna all'archivio</a>
+            </div>
+    </div>
+    </article>
+    </main>
+
+    <section class="related-articles reveal">
+    <h3 class="related-title">Ti potrebbe interessare anche...</h3>
+    <div id="related-posts-container" class="posts-grid">
+    </div>
+    </section>
+
+    <div id="next-article-smart" class="next-article-container">
+    <button id="close-next" class="close-next-btn">&times;</button>
+    
+    <a href="#" id="next-article-link" style="text-decoration: none; color: inherit; display: block;">
+        <div class="next-article-content">
+            <span class="next-label">Leggi un altro</span>
+            <h3 id="next-article-title">Titolo Prossimo Articolo</h3>
+            <p id="next-article-excerpt">Una breve anteprima del contenuto...</p>
+        </div>
+    </a>
+</div>
+
+    <footer>
+    <div class="footer-content">
+        <div class="footer-social">
+            <a href="https://instagram.com/davide.tomio?igsh=YzZ0Y3F6OHpnOTlq" target="_blank">
+                <i class="fa-brands fa-instagram instagram-icon-footer"></i> 
+                Seguimi su Instagram!
+            </a>
+        </div>
+        <p>&copy; 2026 Davide Tomio</p>
+    </div>
+</footer>
+
+<div class="share-wrapper" id="shareWrapper">
+    <div class="share-options" id="shareOptions">
+        <a href="#" id="shareFB" title="Facebook" class="share-btn fb"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#" id="shareX" title="X (Twitter)" class="share-btn x-twitter"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#" id="shareIG" class="share-btn ig"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#" id="shareWA" title="WhatsApp" class="share-btn wa"><i class="fa-brands fa-whatsapp"></i></a>
+        <a href="#" id="shareTG" title="Telegram" class="share-btn tg"><i class="fa-brands fa-telegram"></i></a>
+        <a href="#" id="copyLink" title="Copia Link" class="share-btn copy"><i class="fa-solid fa-link"></i></a>
+    </div> 
+
+    <div id="copy-notification" class="copy-notification">Link copiato negli appunti!</div>
+    
+    <button id="shareMain" class="share-main-btn" title="Condividi">
+        <i class="fa-solid fa-share-nodes"></i>
+    </button>
+</div>
+
+<button id="readingFloat" title="Cambia modalità">
+        <i class="fa-solid fa-eye"></i>
+    </button>
+
+    <button id="backToTop" title="Torna su">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <script src="../database.js"></script>
+    <script src="../script.js"></script> 
+
+    <script>
+        // 1. Funzione per formattare la data
+        function formattaData(dataString) {
+            if (!dataString) return "";
+            const data = new Date(dataString);
+            return data.toLocaleDateString('it-IT', {
+                day: 'numeric',
+                month: 'long',
+                year: 'numeric'
+            });
+        }
+
+        // 2. ID Articolo (controlla che nel database.js l'articolo abbia lo stesso ID)
+        const currentArticleId = 1; 
+        const articleData = ARCHIVIO_ARTICOLI.find(art => art.id === currentArticleId);
+
+        if (articleData) {
+            popolaNextArticle(articleData.slug);
+            document.getElementById('main-title').innerText = articleData.titolo;
+            document.getElementById('breadcrumb-current').innerText = articleData.titolo;
+            document.getElementById('main-subtitle').innerText = articleData.anteprima;
+            document.getElementById('main-date').innerText = formattaData(articleData.dataISO);
+            // --- SPOSTA DATA IN FONDO SU MOBILE ---
+            if (window.innerWidth <= 768) {
+                const dateElement = document.getElementById('main-date');
+                const articleBody = document.querySelector('.article-body');
+                if (dateElement && articleBody) {
+                    articleBody.after(dateElement); // Sposta la data fisicamente dopo il testo
+                    dateElement.classList.add('date-bottom'); // Aggiunge la classe per lo stile
+                }
+            }
+            
+            // Immagine
+            const imgElement = document.getElementById('main-image');
+            imgElement.src = "../immagini/" + articleData.immagine;
+            imgElement.alt = articleData.titolo;
+
+            // Titolo Browser
+            document.getElementById('browser-title').innerText = articleData.titolo + " - Davide Tomio";
+
+            // --- NUOVA LOGICA TAGS CLICCABILI ---
+            const tagsContainer = document.getElementById('article-tags');
+            if (articleData.tags && tagsContainer) {
+                tagsContainer.innerHTML = ''; // Svuota contenuto iniziale
+                articleData.tags.forEach(tag => {
+                    const tagElement = document.createElement('a');
+                    // Crea il link che porta all'archivio con il filtro attivo
+                    tagElement.href = `../articoli.html?tag=${encodeURIComponent(tag.toLowerCase())}`;
+                    tagElement.className = 'clickable-tag';
+                    tagElement.innerText = tag;
+                    tagsContainer.appendChild(tagElement);
+                });
+            }
+
+            const articleBody = document.querySelector('.article-body');
+        const readingTimeElement = document.getElementById('reading-time');
+
+        if (articleBody && readingTimeElement) {
+            const text = articleBody.innerText;
+            const wordsPerMinute = 200; // Velocità media di lettura
+            const noOfWords = text.trim().split(/\s+/).length; // Conta le parole
+            const minutes = Math.ceil(noOfWords / wordsPerMinute); // Arrotonda per eccesso
+            
+            readingTimeElement.innerText = `Tempo di lettura stimato: ${minutes} min.`;
+        }
+
+        window.addEventListener('scroll', () => {
+    moveProgressBar();
+
+});
+
+function moveProgressBar() {
+    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+    const scrolled = (winScroll / height) * 100;
+    
+    const bar = document.getElementById("myBar");
+    if (bar) {
+        bar.style.width = scrolled + "%";
+    }
+}
+
+            inizializzaReveal();
+            caricaArticoliCorrelati('bibbia-queer');
+
+        } else {
+            console.error("Articolo non trovato nel database.");
+        }
+    </script>
+
+<div id="cookie-banner" class="cookie-banner">
+    <div class="cookie-content">
+        <p><strong>Questo sito non vende la tua privacy</strong>. Non usiamo cookie di terze parti, ma solo cookie funzionali per migliorare l'esperienza dell'utente. «Non va bene che ogni nostro movimento, ogni emozione, parola e desiderio siano catalogati, manipolati e poi indirizzati verso un futuro già deciso per far guadagnare qualcuno» (Shoshana Zuboff, <i>Il Capitalismo della Sorveglianza</i>). Leggi la <a href="../cookies.html">Cookie Policy</a>.</p>
+        <div class="cookie-buttons">
+            <button id="accept-cookies" class="cookie-btn accept">Accetta cookie funzionali</button>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
