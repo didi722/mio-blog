@@ -953,7 +953,7 @@ document.addEventListener('DOMContentLoaded', function() {
         "esoterico": "Dottrina o insegnamento riservato a pochi iniziati, spesso caratterizzato da simbolismo complesso e significati nascosti, accessibile solo attraverso un percorso di apprendimento specifico.",
         "sincretismo": "Fusione di diversi insegnamenti religiosi, convivenza di più elementi differenti provenienti da diverse tradizioni di pensiero.",
         "mandala": "Cosmogramma, diagramma cosmico che rappresenta una geografia o una cartografia sacra. Raffigura divinità di diversa natura e ordini di importanza. In diverse tradizioni buddhiste, i mandala vengono usati come strumento di supporto alla meditazione dei monaci.",
-        "Sei Regni": "Sei realtà in cui può avvenire la rinascita: tre positivi (degli dèi, dei sem-dèi, degli esseri umani) e tre negativi (degli animali, dei fantasmi, o un inferno). Più è positivo il regno, più è facile intraprendere un percorso di illuminazione e liberarsi dal ciclo samsarico.",
+        "sei regni": "Sei realtà in cui può avvenire la rinascita: tre positivi (degli dèi, dei sem-dèi, degli esseri umani) e tre negativi (degli animali, dei fantasmi, o un inferno). Più è positivo il regno, più è facile intraprendere un percorso di illuminazione e liberarsi dal ciclo samsarico.",
     };
 
     // 4. LOGICA CITAZIONE (Mouse Up)
