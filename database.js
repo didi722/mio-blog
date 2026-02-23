@@ -25,6 +25,16 @@ const ARCHIVIO_ARTICOLI = [
         anteprima: "I samurai e il Buddhismo della Terra Pura",
         immagine: "samurai.jpg",
         tags: ["Giappone", "Buddhismo", "Samurai"]
-    },    
+    },
+    
+    {
+        id: 4,
+        titolo: "Il Libro tibetano dei morti",
+        slug: "bar-do",
+        dataISO: "2026-02-23",
+        anteprima: "Vita, morte, rinascita, salvezza",
+        immagine: "bardo.jpg",
+        tags: ["Tibet", "Buddhismo", "Morte", "Testi sacri"]
+    }, 
     
 ];
