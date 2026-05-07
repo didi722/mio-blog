@@ -2897,7 +2897,6 @@ html.dark-mode #quote-sharer {
     color: #555;
     border-radius: 0 0 8px 8px; /* Arrotonda angoli inferiori */
     border-top: 1px solid #ddd;
-    font-style: italic;
 }
 
 /* Gestione Dark Mode per le didascalie */
