@@ -24,6 +24,37 @@ body {
     }
 }
 
+/* Layout per la bio affiancata */
+.bio-content {
+  display: flex;
+  align-items: center; /* Centra verticalmente l'immagine rispetto al testo */
+  gap: 30px; /* Spazio tra immagine e testo */
+  max-width: 800px; /* Larghezza massima della sezione bio */
+  margin: 0 auto; /* Centra la bio nella pagina */
+}
+
+/* Stile per l'immagine a lato */
+.bio-pic-side {
+  width: 150px; /* Larghezza dell'immagine */
+  height: 150px; /* Altezza dell'immagine */
+  border-radius: 50%; /* Rende l'immagine circolare (opzionale) */
+  object-fit: cover; /* Assicura che l'immagine non si deformi */
+  border: 3px solid #f2cf8d; /* Aggiunge un bordo dello stesso giallo del footer (opzionale) */
+}
+
+/* Stile per il testo affiancato */
+.bio-text {
+  flex: 1; /* Il testo occupa il resto dello spazio */
+}
+
+/* Responsive: mette immagine sopra il testo su mobile */
+@media (max-width: 768px) {
+  .bio-content {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
 .main-header {
     background: rgba(214, 187, 81, 0.6) !important;
     backdrop-filter: blur(5px); 
