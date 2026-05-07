@@ -37,4 +37,13 @@ const ARCHIVIO_ARTICOLI = [
         tags: ["Tibet", "Buddhismo", "Morte", "Testi sacri"]
     }, 
     
+    {
+        id: 5,
+        titolo: "Mizuko kuyō: l'aborto è una colpa?",
+        slug: "mizuko-kuyo",
+        dataISO: "2026-05-07",
+        anteprima: "Il rito funebre giapponese per i bambini abortiti",
+        immagine: "mizuko-kuyo.jpg",
+        tags: ["Giappone", "Buddhismo", "Morte", "Donne"]
+    }, 
 ];

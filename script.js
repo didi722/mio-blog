@@ -954,7 +954,12 @@ document.addEventListener('DOMContentLoaded', function() {
         "sincretismo": "Fusione di diversi insegnamenti religiosi, convivenza di più elementi differenti provenienti da diverse tradizioni di pensiero.",
         "mandala": "Cosmogramma, diagramma cosmico che rappresenta una geografia o una cartografia sacra. Raffigura divinità di diversa natura e ordini di importanza. In diverse tradizioni buddhiste, i mandala vengono usati come strumento di supporto alla meditazione dei monaci.",
         "sei regni": "Sei realtà in cui può avvenire la rinascita: tre positivi (degli dèi, dei sem-dèi, degli esseri umani) e tre negativi (degli animali, dei fantasmi, o un inferno). Più è positivo il regno, più è facile intraprendere un percorso di illuminazione e liberarsi dal ciclo samsarico.",
-    };
+        "stūpa": "Tipologia di monumento già presente nel Buddhismo indiano, con lo scopo principale di conservare reliquie. La parte finale dello <i>stūpa</i>, stretta e lunga, è stata l’ispirazione architettonica per le pagode dell’Asia orientale.",
+        "daimyō": "Titolo di signore feudale in epoca medievale e premoderna.",
+        "bodhisattva": "Individuo che raggiunge l’illuminazione ma che, mosso da Compassione verso l’umanità, sceglie di rinunciare al Nirvana per aiutare gli altri esseri umani nel loro percorso di salvezza. L’emergere del concetto di bodhisattva è stato fondamentale per lo sviluppo del Buddhismo Mahāyāna, il troncone di interpretazione del messaggio di Buddha principalmente diffuso in Asia orientale. Esistono svariati bodhisattva diversi, che spesso vengono trattati alla stregua di vere e proprie divinità.",
+        "psicopompo": "Dal greco ψυχοπομπóς, composta da <i>psyché</i>, “anima”, “spirito”, e <i>pompós</i>, “colui che manda”. Figura con il ruolo di accompagnatore dei defunti nell’aldilà, presente in diverse forme in varie cosmologie in giro per il mondo."
+        
+        };
 
     // 4. LOGICA CITAZIONE (Mouse Up)
     const handleSelection = function() {

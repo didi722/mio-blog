@@ -247,94 +247,104 @@ E l’energia vitale dell’uomo si calmerà.<sup class="nota-link" id="ref13"><
     <script src="../script.js"></script> 
 
     <script>
-        // 1. Funzione per formattare la data
-        function formattaData(dataString) {
-            if (!dataString) return "";
-            const data = new Date(dataString);
-            return data.toLocaleDateString('it-IT', {
-                day: 'numeric',
-                month: 'long',
-                year: 'numeric'
-            });
-        }
+    // 1. Funzione per formattare la data
+    function formattaData(dataString) {
+        if (!dataString) return "";
+        const data = new Date(dataString);
+        return data.toLocaleDateString('it-IT', {
+            day: 'numeric',
+            month: 'long',
+            year: 'numeric'
+        });
+    }
 
-        // 2. ID Articolo (controlla che nel database.js l'articolo abbia lo stesso ID)
-        const currentArticleId = 1; 
-        const articleData = ARCHIVIO_ARTICOLI.find(art => art.id === currentArticleId);
-
-        if (articleData) {
-            popolaNextArticle(articleData.slug);
-            document.getElementById('main-title').innerText = articleData.titolo;
-            document.getElementById('breadcrumb-current').innerText = articleData.titolo;
-            document.getElementById('main-subtitle').innerText = articleData.anteprima;
-            document.getElementById('main-date').innerText = formattaData(articleData.dataISO);
-            // --- SPOSTA DATA IN FONDO SU MOBILE ---
-            if (window.innerWidth <= 768) {
-                const dateElement = document.getElementById('main-date');
-                const articleBody = document.querySelector('.article-body');
-                if (dateElement && articleBody) {
-                    articleBody.after(dateElement); // Sposta la data fisicamente dopo il testo
-                    dateElement.classList.add('date-bottom'); // Aggiunge la classe per lo stile
-                }
-            }
-            
-            // Immagine
-            const imgElement = document.getElementById('main-image');
-            imgElement.src = "../immagini/" + articleData.immagine;
-            imgElement.alt = articleData.titolo;
-
-            // Titolo Browser
-            document.getElementById('browser-title').innerText = articleData.titolo + " - Davide Tomio";
-
-            // --- NUOVA LOGICA TAGS CLICCABILI ---
-            const tagsContainer = document.getElementById('article-tags');
-            if (articleData.tags && tagsContainer) {
-                tagsContainer.innerHTML = ''; // Svuota contenuto iniziale
-                articleData.tags.forEach(tag => {
-                    const tagElement = document.createElement('a');
-                    // Crea il link che porta all'archivio con il filtro attivo
-                    tagElement.href = `../articoli.html?tag=${encodeURIComponent(tag.toLowerCase())}`;
-                    tagElement.className = 'clickable-tag';
-                    tagElement.innerText = tag;
-                    tagsContainer.appendChild(tagElement);
-                });
-            }
-
-            const articleBody = document.querySelector('.article-body');
+    // FUNZIONE CORRETTA
+    function calcolaTempoLettura() {
+        const articleBody = document.querySelector('.article-body');
         const readingTimeElement = document.getElementById('reading-time');
 
         if (articleBody && readingTimeElement) {
-            const text = articleBody.innerText;
-            const wordsPerMinute = 200; // Velocità media di lettura
-            const noOfWords = text.trim().split(/\s+/).length; // Conta le parole
-            const minutes = Math.ceil(noOfWords / wordsPerMinute); // Arrotonda per eccesso
-            
-            readingTimeElement.innerText = `Tempo di lettura stimato: ${minutes} min.`;
+            // Usiamo textContent per assicurarci di leggere il testo pulito
+            const text = articleBody.textContent || "";
+            const wordsPerMinute = 200; 
+            const words = text.trim().split(/\s+/).filter(w => w.length > 0);
+            const noOfWords = words.length;
+
+            if (noOfWords > 0) {
+                const minutes = Math.ceil(noOfWords / wordsPerMinute);
+                readingTimeElement.innerText = `Tempo di lettura stimato: ${minutes} min.`;
+            }
         }
+    }
+
+    // 2. ID Articolo
+    const currentArticleId = 1; 
+    const articleData = ARCHIVIO_ARTICOLI.find(art => art.id === currentArticleId);
+
+    if (articleData) {
+        popolaNextArticle(articleData.slug);
+        document.getElementById('main-title').innerText = articleData.titolo;
+        document.getElementById('breadcrumb-current').innerText = articleData.titolo;
+        document.getElementById('main-subtitle').innerText = articleData.anteprima;
+        document.getElementById('main-date').innerText = formattaData(articleData.dataISO);
+        
+        // --- SPOSTA DATA IN FONDO SU MOBILE ---
+        if (window.innerWidth <= 768) {
+            const dateElement = document.getElementById('main-date');
+            const articleBody = document.querySelector('.article-body');
+            if (dateElement && articleBody) {
+                articleBody.after(dateElement); 
+                dateElement.classList.add('date-bottom'); 
+            }
+        }
+        
+        // Immagine
+        const imgElement = document.getElementById('main-image');
+        imgElement.src = "../immagini/" + articleData.immagine;
+        imgElement.alt = articleData.titolo;
+
+        // Titolo Browser
+        document.title = articleData.titolo + " - Davide Tomio";
+
+        // --- TAGS CLICCABILI ---
+        const tagsContainer = document.getElementById('article-tags');
+        if (articleData.tags && tagsContainer) {
+            tagsContainer.innerHTML = ''; 
+            articleData.tags.forEach(tag => {
+                const tagElement = document.createElement('a');
+                tagElement.href = `../articoli.html?tag=${encodeURIComponent(tag.toLowerCase())}`;
+                tagElement.className = 'clickable-tag';
+                tagElement.innerText = tag;
+                tagsContainer.appendChild(tagElement);
+            });
+        }
+
+        // --- CHIAMATA ALLA FUNZIONE TEMPO LETTURA ---
+        // Usiamo un timeout minimo per essere sicuri che il testo sia pronto nel DOM
+        setTimeout(calcolaTempoLettura, 50);
 
         window.addEventListener('scroll', () => {
-    moveProgressBar();
+            moveProgressBar();
+        });
 
-});
-
-function moveProgressBar() {
-    const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
-    const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-    const scrolled = (winScroll / height) * 100;
-    
-    const bar = document.getElementById("myBar");
-    if (bar) {
-        bar.style.width = scrolled + "%";
-    }
-}
-
-            inizializzaReveal();
-            caricaArticoliCorrelati('bibbia-queer');
-
-        } else {
-            console.error("Articolo non trovato nel database.");
+        function moveProgressBar() {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            
+            const bar = document.getElementById("myBar");
+            if (bar) {
+                bar.style.width = scrolled + "%";
+            }
         }
-    </script>
+
+        inizializzaReveal();
+        caricaArticoliCorrelati('bibbia-queer');
+
+    } else {
+        console.error("Articolo non trovato nel database.");
+    }
+</script>
 
 <div id="cookie-banner" class="cookie-banner">
     <div class="cookie-content">
